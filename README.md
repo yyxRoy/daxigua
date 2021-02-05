@@ -62,7 +62,7 @@
 > 感谢 [buchenglei](https://github.com/buchenglei) 的贡献
 
 1. 构建镜像
-    
+   
     ```bash
     docker build -t daxigua-server .
     ```
@@ -120,7 +120,7 @@
 
 > 如果要替换为一键部署自己的仓库，要先 fork 我的仓库，本地修改后再提交到自己 fork 的仓库，最后把一键部署按钮仓库地址改为自己的仓库即可！
 
-[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https://github.com/liyupi/daxigua&branch=master)
+[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https://github.com/yyxRoy/daxigua&branch=master)
 
 
 #### Vercel
@@ -201,17 +201,17 @@ vercel --prod
     答：在输入 vercel 后，选择不和已有项目关联（link），并且使用一个新的项目名（project name）。
 
 8. 想在修改文件后重新搞个新版本，但输入 vercel prod 后，直接覆盖了，而没有让我选择是否和现有项目关联（link），怎么办？
-    
+   
     答：执行 vercel 后，会在本地生成 `.vercel` 隐藏目录保存之前的发布信息，删掉该目录即可。
 
 9. 导出网址后，我修改了图片，然后游戏中还是原来的图片？
-    
+   
     答：网址读取的是远程的文件，只改了本地当然没用！再次执行 vercel 或腾讯云命令，把最新文件传上去。
     
 10. Mac 能否使用这个教程呢？
     
     答：当然可以！所有命令和 windows 完全一致！只是 cmd 命令行工具改为用 terminal 终端（按 command + 空格，搜索 terminal）
- 
+
 11. 为什么打开网站白屏了？
     
     答：大概率是你修改错误，导致一些文件缺失。。可以试试重新下载代码，再修改，请先确保本地可以运行，再发布！
